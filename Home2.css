@@ -1,0 +1,322 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(Background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Navbar1 */
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .hamburger-btn {
+    display: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+
+.navbar img {
+    width: 22%; /* Adjust the width to your desired size */
+    height: 18%; /* This will maintain the aspect ratio */
+    cursor: pointer;
+}
+
+.navbar .logo h2 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.9rem;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.navbar .links a {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.1s ease;
+    text-transform: uppercase;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px; /* Adjusted margin to match Navbar2 */
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009899;
+    position: absolute;
+    left: 0%;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.Logo {
+    width: 22%;
+    height: 18%;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons img {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.icons img:hover {
+    background-color: var(--white);
+    color: white;
+}
+
+.navbar .search-form {
+    position: absolute;
+    top: 120px;
+    right: 2rem;
+    width: 18rem;
+    height: 1.8rem;
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+.navbar .search-form input {
+    height: 100%;
+    width: 110%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: #000;
+    padding: 0 0.5rem;
+}
+
+.search-form label {
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: #000;
+    cursor: pointer;
+}
+
+#menu-btn{
+    display: none;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 30px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009899;
+    position: absolute;
+    left: 0%;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.hamburger-btn {
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.close-btn {
+    display: none;
+    color: #000;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+section {
+    text-align: center;
+    padding: 10%;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3 {
+    color: #fff;
+}
+
+p {
+    font-size: 17px;
+    color: #fff;
+}
+
+.animated-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+
+.animated-text.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Media Query for screens smaller than 768px (standard smartphones) */
+@media only screen and (max-width: 900px) {
+    .navbar :is(.hamburger-btn, .close-btn) {
+        display: block;
+    }
+ 
+    .navbar {
+        padding: 15px 0;
+    }
+ 
+    .navbar .logo img {
+        display: none;
+    }
+ 
+    .navbar .logo h2 {
+        font-size: 1.4rem;
+    }
+ 
+    .navbar .links {
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        left: -100%;
+        display: block;
+        height: 100vh;
+        width: 100%;
+        padding-top: 60px;
+        text-align: center;
+        background: #fff;
+        transition: 0.2s ease;
+    }
+ 
+    .navbar .links.show-menu {
+        left: 0;
+    }
+ 
+    .navbar .links a {
+        display: inline-flex;
+        margin: 20px 0;
+        font-size: 1.2rem;
+        color: #000;
+    }
+ 
+    .navbar .links a:hover {
+        color: #00BCD4;
+    }
+
+    .content h2.animated-text {
+        font-size: 40px; /* Adjust font size for smaller screens */
+        margin-top: 50px; /* Adjust margin-top as needed */
+    }
+
+    .content p {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .button {
+        width: 150px; /* Adjust button width for smaller screens */
+        margin: 15px 5px;
+    }
+}

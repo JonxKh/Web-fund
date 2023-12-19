@@ -1,0 +1,152 @@
+body {
+    background-color: rgb(217,217,214);
+    
+    font-size: 16px;
+    color: #333;
+    font-weight: normal;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+
+}
+
+
+img{
+    height: 120px;
+    width: 300px;
+}
+
+header {
+    background-color: rgb(16,46,68);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    
+}
+section{
+    text-align: center;
+    padding: 10%;
+    
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar li {
+    list-style: none;
+    display: inline-block;
+    padding: 1em 20px;  /* Added unit (e.g., em) to padding */
+    position: relative;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+.navbar li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009899;
+    position: absolute;
+    left: 0%;
+    bottom: 8px;
+    transition: 0.5s;
+}
+
+.navbar li:hover::after{
+    width: 100%;
+}
+
+
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p{
+    font-size: 17px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    flex-wrap: nowrap;
+}
+.inline-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    background-color: lightslategray;
+    text-align: center;
+    padding: 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.inline-block img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    
+}
+
+.inline-block h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.inline-block p {
+    margin: 10px 0 0;
+    font-size: 1em;
+}
+
+footer {
+    background-color: rgb(16,46,68);
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    position:relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+section{
+    text-align: center;
+    padding: 10%;
+}
+
+.animated-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+    }
+    
+.animated-text.animate {
+    opacity: 1;
+    transform: translateY(0);
+    }
